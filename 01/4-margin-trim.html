@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>margin-trimの例</title>
+    <style>
+      body {
+        max-width: 40em;
+        margin-inline: auto;
+      }
+
+      h2 {
+        color: crimson;
+      }
+
+      .container {
+        display: flex;
+        gap: 1em;
+        padding: 1em;
+        border: 1px solid #000;
+      }
+
+      .icon {
+        max-width: 100px;
+        height: auto;
+        align-self: start;
+      }
+
+      .text {
+        line-height: 1.5;
+      }
+
+      .trim {
+        margin-trim: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>margin-trimの例</h1>
+    <p>
+      <code>margin-trim</code
+      >は、指定した要素の子に隣接するマージンを切り取るプロパティです。
+    </p>
+    <h2>デフォルト（<code>margin-trim: none</code>）</h2>
+    <div id="container1" class="container">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAAAAAAcD2kOAAABgElEQVR42u3WoW7EMBCE4b7/K61CFlgKCDwSqSAk0MhkgfW3saJeW7R1QQvGwI4vc/NdZJ2UF/uj8SJYsGDBggULFixYsGDBggULFixYsGDBggUL/qew++fruXge3qKNdTka9LqOzREQ5zIRT8NbJ0ZRBYBentd1mYjnYD+B0fQAWgNOsx2oFXhMxFOwB9xNdrCbVWi2BBxmJ9SP01s8E0/DhWeTud3f3gC3sSy29uZm3mLNxPNw3SHsHvePf0C7mgEfD+XeoGbiWXjZbPvc9Aqs11yvm2NTAqJBlEw8C5t9aSodztHXri2w2ZCHm4lPwhW6m+1fH2EF2HLxOXgHdrNvh+YNoHkqPgWXDvX+iGUsfbhEDDkRn4Ib9HGSS+f+k55jjlICaiI+Bb8CtPdx2Am9VsaZbT2KWYm+JeIzcOnc47QSAHBcN1a/Zi+5eB5eoY2VZ5N57RD7RPz3LwLFfxjXq49gwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYs+C/hN9K4qZ0/OloIAAAAAElFTkSuQmCC"
+        alt="画像"
+        class="icon"
+      />
+      <div class="text">
+        <p>
+          <code>margin-trim</code
+          >プロパティの初期値は<code>none</code>です。これはこれまでの挙動と同じで、何も起こしません。
+        </p>
+        <p>
+          この例では、この段落の上下のマージンがそのままなので、画像とテキストのボックスが揃いません。
+        </p>
+      </div>
+    </div>
+    <h2><code>margin-trim: block</code></h2>
+    <div id="container2" class="container">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAAAAAAcD2kOAAABgElEQVR42u3WoW7EMBCE4b7/K61CFlgKCDwSqSAk0MhkgfW3saJeW7R1QQvGwI4vc/NdZJ2UF/uj8SJYsGDBggULFixYsGDBggULFixYsGDBggUL/qew++fruXge3qKNdTka9LqOzREQ5zIRT8NbJ0ZRBYBentd1mYjnYD+B0fQAWgNOsx2oFXhMxFOwB9xNdrCbVWi2BBxmJ9SP01s8E0/DhWeTud3f3gC3sSy29uZm3mLNxPNw3SHsHvePf0C7mgEfD+XeoGbiWXjZbPvc9Aqs11yvm2NTAqJBlEw8C5t9aSodztHXri2w2ZCHm4lPwhW6m+1fH2EF2HLxOXgHdrNvh+YNoHkqPgWXDvX+iGUsfbhEDDkRn4Ib9HGSS+f+k55jjlICaiI+Bb8CtPdx2Am9VsaZbT2KWYm+JeIzcOnc47QSAHBcN1a/Zi+5eB5eoY2VZ5N57RD7RPz3LwLFfxjXq49gwYIFCxYsWLBgwYIFCxYsWLBgwYIFCxYs+C/hN9K4qZ0/OloIAAAAAElFTkSuQmCC"
+        alt="画像"
+        class="icon"
+      />
+      <div class="text trim">
+        <p>
+          <code>margin-trim: block</code
+          >で、指定した要素のブロック方向の先頭・最後に隣接するマージンを切り取ります。この例では、この段落の上下のマージンが切り取られ、画像とテキストのボックスが揃っています。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

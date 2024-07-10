@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-wrap: wrap/nowrap</title>
+  <style>
+    body {
+    font-size: 16px;
+    }
+    p {
+      margin-block: 2em;
+      margin-inline: 1em;
+      width: 15em;
+      background-color: #ade4ff;
+      }
+
+    .pretty {
+      text-wrap: pretty;
+    }
+
+  </style>
+</head>
+<body>
+
+<h3>指定なし</h3>
+
+<p>
+  吾輩は猫である。名前はまだ無い。
+</p>
+
+<h3>text-wrap: pretty</h3>
+
+<p class="pretty">
+  吾輩は猫である。名前はまだ無い。
+</p>
+
+</body>
+</html>
