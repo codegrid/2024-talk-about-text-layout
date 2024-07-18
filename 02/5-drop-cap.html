@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ドロップキャップとCSS</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+h2 {
+  font-size: 1.1em;
+  margin-block: 2em 1em;
+}
+p {
+  width: 35em;
+}
+#p1::first-letter {
+  initial-letter: 2;
+}
+#p2::first-letter {
+  initial-letter: 2 1;
+}
+#p3::first-letter {
+  font-size: 3em;
+  float: left;
+}
+</style>
+</head>
+<body>
+<h1>ドロップキャップとCSS</h1>
+
+<h2>initial-letter: 2 - 2行分の高さ</h2>
+
+<p id="p1">The initial-letter property in CSS is used to control the styling of the first letter of a block-level element, such as a paragraph. It can be particularly useful for creating drop caps, which are large, decorative first letters commonly seen in print typography.</p>
+
+<h2>initial-letter: 2 1 - 2行分の高さ、1行下げる</h2>
+
+<p id="p2">The initial-letter property in CSS is used to control the styling of the first letter of a block-level element, such as a paragraph. It can be particularly useful for creating drop caps, which are large, decorative first letters commonly seen in print typography.</p>
+
+<h2>font-size: 3em; float: left - フロートを使った擬似ドロップキャップ</h2>
+
+<p id="p3">The initial-letter property in CSS is used to control the styling of the first letter of a block-level element, such as a paragraph. It can be particularly useful for creating drop caps, which are large, decorative first letters commonly seen in print typography.</p>
+</body>
+</html>
